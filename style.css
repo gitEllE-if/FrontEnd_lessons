@@ -13,12 +13,12 @@
     max-width: 1140px;
 }
 
-.header {
+.headerMain {
     height: 100px;
     border-bottom: 1px solid #ececec;
 }
 
-.header .container {
+.headerMain .container {
     height: inherit;
     display: flex;
     align-items: center;
@@ -33,7 +33,6 @@
     align-items: center;
     text-decoration: none;
     padding-left: 72px;
-    font-family: Lato;
     font-size: 27px;
     line-height: 32px;
     font-weight: 300;
@@ -69,6 +68,7 @@
     background-image: linear-gradient(180.0deg, #f9f9f9 0%, #f5f5f5 100%);
     border-right: 1px solid #e6e6e6;
     color: #222222;
+    outline: none;
 }
 
 .browse i {
@@ -81,6 +81,7 @@
     padding: 14px 16px;
     font: inherit;
     color: #a4a4a4;
+    outline: none;
 }
 
 .search button {
@@ -89,11 +90,18 @@
     border-left: 1px solid #e6e6e6;
     background: none;
     color: #a4a4a4;
+    outline: none;
+    cursor: pointer;
+}
+
+.cart img{
+    
+    margin-right: 26px;
 }
 
 .cart {
+    display: block;
     margin-left: auto;
-    margin-right: 26px;
 }
 
 .accountButton {
@@ -106,6 +114,8 @@
     letter-spacing: 0.025em;
     color: #ffffff;
     border: none;
+    outline: none;
+    cursor: pointer;
 }
 
 .accountButton i {
@@ -335,6 +345,8 @@
     letter-spacing: 0.025em;
     color: #ffffff;
     border: none;
+    outline: none;
+    cursor: pointer;
 }
 
 .featuredButton i {
@@ -384,8 +396,8 @@
 
 .offerBottomText {
     height: inherit;
-    flex-basis: 390px;
-    padding: 38px 48px;
+    flex-basis: 373px;
+    padding: 36px 48px 66px 43px;
     background-color: #222224;
 }
 
@@ -404,7 +416,6 @@
 }
 
 .menu__li {
-    flex-grow: 1;
     display: flex;
 }
 
@@ -418,11 +429,11 @@
 }
 
 .menu__text{
-    font-size: 14px;
+    font-size: 13px;
     line-height: 24px;
     font-weight: 300;
     letter-spacing: 0.025em;
-    margin-top: 20px;
+    margin-top: 17px;
 }
 
 .menu__li:first-child::before {
@@ -446,6 +457,493 @@
 .subscribe {
     height: 438px;
     margin-top: 100px;
-    background: url(img/subscribe.jpg) no-repeat;
+    background: url(img/subscribe.jpg) no-repeat center bottom rgb(190, 190, 190);
     background-size: cover;
+    background-blend-mode: overlay;
+}
+
+.subscribe .container {
+    display: flex;
+    height: inherit;
+}
+
+.feedbackWrapper {
+    border-right: 1px solid white;
+    width: 50%;
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.feedbackPhoto {
+    padding-bottom: 100px;
+}
+
+.feedbackInfo {
+    width: 386px;
+    margin-left: 28px;
+}
+
+.feedbackText {
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 0.025em;
+    color: #222224;
+}
+
+.feedbackName {
+    margin-top: 19px;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: #f16d7f;
+}
+
+.feedbackCountry {
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 300;
+    color: #222224;
+}
+
+.feedbackRects {
+    margin-top: 40px;
+    width: 136px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedbackRect {
+    width: 38px;
+    height: 4px;
+    background-color: #d6d6d6;
+}
+
+.feedbackRect:hover {
+    background-color: #f16d7f;
+}
+
+.subscribeMail {
+    width: inherit;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #222224;
+}
+
+.subscribeTitle1 {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.subscribeTitle2 {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.subscribeForm {
+    margin-top: 35px;
+    width: 390px;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    
+    font-weight: 400;
+    letter-spacing: 0.025em;
+}
+
+.subscribeForm input {
+    height: inherit;
+    width: 286px;
+    padding-left: 28px;
+    background-color: #e1e1e1;
+    border: none; 
+     border-radius: 30px 0px 0px 30px;
+    font: inherit;
+    color: #222224;
+    outline: none;
+}
+
+.subscribeForm button {
+    height: inherit;
+    width: 104px;
+    background-color: #f16d7f;
+    border: none;
+    border-radius: 0px 30px 30px 0px;
+    font: inherit;
+    color: #ffffff;
+    outline: none;
+    cursor: pointer;
+}
+
+.footerTop {
+    height: 460px;
+    padding-top: 109px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerLogoText {
+    width: 427px;
+}
+
+.footerText {
+    margin-top: 30px;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    color: #898989;
+}
+
+.footerTitle {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: #f16d7f;
+    margin-bottom: 45px;
+}
+
+.footerList {
+    list-style: none;
+    height: 179px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footerList a {
+    text-decoration: none;
+    font-size: 16px;
+
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #898989;
+}
+
+.footerBottom {
+    height: 79px;
+    background-color: #e6e6e6;
+}
+
+.footerBottom .container {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerSocial {
+    width: 194px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerSocialIcon {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    background-color: #ffffff;
+    font-size: 16px;
+    line-height: 42px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #b2b2b2;
+}
+
+.footerSocialIcon :hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    width: inherit;
+    color: #ffffff;
+    background-color: #f16d7f;
+}
+
+.footerCopyright {
+    font-size: 16px;
+    line-height: 42px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #7a7a7a;
+}
+
+/* --cart---------------------------------- */
+
+.topShowCart {
+    height: 148px;
+    background-color: #f8f3f4;
+}
+
+.topShowCart .container {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.showCartTextLeft {
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #f16d7f;
+}
+
+.showCartTextRight {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #636363;
+}
+
+.showCartTextRight span {
+    font-weight: 700;
+    color: #f16d7f;
+}
+
+.detailsCart {
+    height: 530px;
+    margin-top: 90px;
+}
+
+.detailsCartHead {
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.015em;
+    color: #222222;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.detailsCartRight {
+    width: 625px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.detailCart0 {
+    width: 280px;
+    padding-top: 3px;
+}
+
+.detailCart1 {
+    width: 78px;
+    padding-top: 3px;
+}
+
+.detailCart2 {
+    width: 65px;
+    padding-top: 3px;
+}
+
+.detailCart3 {
+    width: 60px;
+    padding-top: 3px;
+}
+
+.detailCart4 {
+    width: 65px;
+    padding-top: 3px;
+}
+
+.detailCart5 {
+    width: 55px;
+    padding-top: 3px;
+}
+
+.detailFrame {
+    width: 54px;
+    height: 30px;
+    border: 1px solid #eaeaea;
+}
+
+.productCart {
+    height: 163px;
+    border-bottom: 1px solid #eaeaea;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 22px;
+    padding-bottom: 25px;
+}
+
+.productCart .detailsCartRight {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #656565;
+}
+
+.productProperty {
+    display: flex;
+    justify-content: space-between;
+}
+
+.productText {
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    padding-top: 10px;
+}
+
+.productName {
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #222222;
+}
+
+.productSizeColor {
+    margin-top: auto;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #6f6e6e;
+}
+
+.productSizeColor span {
+    font-weight: 300;
+}
+
+.buttonsCart {
+    height: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttonsCart button {
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #4a4a4a;
+    width: 235px;
+    height: 50px;
+    background:none;
+    border: 1px solid #eaeaea;
+    cursor: pointer;
+    outline: none;
+}
+
+.totalCartWrap {
+    height: 268px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.totalCartTitle {
+    margin-bottom: 23px;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222; 
+}
+
+.totalCartTitle span {
+    margin-left: 20px;
+    color: #f16d7f;
+}
+
+.cartForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.cartForm :not(:last-child) {
+    width: 355px;
+    height: 45px;
+    padding-left: 18px;
+    padding-right: 18px;
+    margin-bottom: 20px;
+    border: 1px solid #eaeaea;
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 300;
+    color: #b1b1b1;
+    outline: none;
+}
+
+.cartForm input::placeholder {
+    color: #b1b1b1;
+}
+
+.cartForm button {
+    width: 100px;
+    height: 35px;
+    border: 1px solid #eaeaea;
+    font-size: 11px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #4a4a4a;
+    background: none;
+}
+
+.couponCart div {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 300;
+    color: #000000;
+}
+
+.totalCart {
+    width: 360px;
+    height: 214px;
+    background-color: #f5f3f3;
+    padding: 42px;
+    text-align: right;
+}
+
+.totalCart div {
+    margin-bottom: 14px;
+    font-size: 11px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #4a4a4a;
+}
+
+hr {
+    border: 1px solid #e2e2e2;
+}
+
+.totalCart button {
+    margin-top: 17px;
+    width: 273px;
+    height: 50px;
+    background-color: #f16d7f;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
