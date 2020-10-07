@@ -4,11 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
+    <title>Product</title>
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 
 <body>
@@ -45,109 +44,142 @@
             </nav>
         </div>
     </div>
-    <div class="detailsCart container">
-        <div class="detailsCartHead">
-            <div class="detailsCart0">Product Details</div>
-            <div class="detailsCartRight">
-                <div class="detailCart1">unite Price</div>
-                <div class="detailCart2">Quantity</div>
-                <div class="detailCart3">shipping</div>
-                <div class="detailCart4">Subtotal</div>
-                <div class="detailCart5">ACTION</div>
-            </div>
+    <div class="sliderSingle">
+        <div class="sliderArrows">
+            <div class="sliderArrow"><i class="fas fa-angle-left" aria-hidden="true"></i></div>
+            <div class="sliderArrow"><i class="fas fa-angle-right" aria-hidden="true"></i></div>
         </div>
-        <section class="productCart">
-            <div class="productProperty detailCart0">
-                <img src="img/product1.jpg" alt="product">
-                <div class="productText">
-                    <h3 class="productName">
-                        Mango People T-shirt
-                    </h3>
-                    <div class="productSizeColor">
-                        Color: <span>Red</span><br>Size: <span>XLL</span>
-                    </div>
-                </div>
-            </div>
-            <div class="detailsCartRight">
-                <div class="detailCart1">$150</div>
-                <div class="detailCart2 detailFrame">2</div>
-                <div class="detailCart3">FREE</div>
-                <div class="detailCart4">$300</div>
-                <div class="detailCart5"><i class="fas fa-times-circle"></i></div>
-            </div>
-        </section>
-        <section class="productCart">
-            <div class="productProperty detailCart0">
-                <img src="img/product2.jpg" alt="product">
-                <div class="productText">
-                    <h3 class="productName">
-                        Mango People T-shirt
-                    </h3>
-                    <div class="productSizeColor">
-                        Color: <span>Red</span><br>Size: <span>XLL</span>
-                    </div>
-                </div>
-            </div>
-            <div class="detailsCartRight">
-                <div class="detailCart1">$150</div>
-                <div class="detailCart2 detailFrame">2</div>
-                <div class="detailCart3">FREE</div>
-                <div class="detailCart4">$300</div>
-                <div class="detailCart5"><i class="fas fa-times-circle"></i></div>
-            </div>
-        </section>
-        <section class="productCart">
-            <div class="productProperty detailCart0">
-                <img src="img/product3.jpg" alt="product">
-                <div class="productText">
-                    <h3 class="productName">
-                        Mango People T-shirt
-                    </h3>
-                    <div class="productSizeColor">
-                        Color: <span>Red</span><br>Size: <span>XLL</span>
-                    </div>
-                </div>
-            </div>
-            <div class="detailsCartRight">
-                <div class="detailCart1">$150</div>
-                <div class="detailCart2 detailFrame">2</div>
-                <div class="detailCart3">FREE</div>
-                <div class="detailCart4">$300</div>
-                <div class="detailCart5"><i class="fas fa-times-circle"></i></div>
-            </div>
-        </section>
     </div>
-    <div class="buttonsCart container">
-        <button>CLEAR SHOPPING CART</button>
-        <button>CONTINUE SHOPPING</button>
-    </div>
-    <div class="totalCartWrap container">
-        <div class="addressCart">
-            <h2 class="totalCartTitle">Shipping Adress</h2>
-            <form action="#" class="cartForm">
-                <select name="countrySelect" id="countrySel">
-                    <option value="Bangladesh">Bangladesh</option>
-                    <option value="Russia">Russia</option>
-                    <option value="India">India</option>
-                </select>
-                <input required type="text" placeholder="State">
-                <input required type="number" placeholder="Postcode / Zip">
-                <button>get a quote</button>
+    <div class="productInfoSingle container">
+        <div class="productInfoSingleWrap">
+            <div class="productCategorySingle">WOMEN&nbsp;COLLECTION</div>
+            <div class="productNameSingle">Moschino Cheap And Chic</div>
+            <div class="productTextSingle">Compellingly actualize fully researched processes before proactive
+                outsourcing. Progressively syndicate collaborative architectures before cutting-edge services.
+                Completely visualize parallel core competencies rather than exceptional portals.
+            </div>
+            <div class="productMaterialDesignerSingle">
+                <div>
+                    <span>MATERIAL:</span> COTTON
+                </div>
+                <div>
+                    <span>DESIGNER:</span> BINBURHAN
+                </div>
+            </div>
+            <div class="productPriceSingle">
+                $561
+            </div>
+            <form action="#" class="formSingle">
+                <label>CHOOSE COLOR<br>
+                    <span class="colorBlock" id="colorBlock"></span>
+                    <select name="productColor" id="productColor" class="selectSingle">
+                        <option value="black">Black</option>
+                        <option value="red">Red</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                        <option value="pink">Pink</option>
+                    </select>
+                </label>
+                <label>CHOOSE SIZE<br>
+                    <select name="productSize" id="productSize" class="selectSingle">
+                        <option value="xxl">XXL</option>
+                        <option value="xl">XL</option>
+                        <option value="l">L</option>
+                        <option value="m">M</option>
+                        <option value="s">S</option>
+                        <option value="xs">XS</option>
+                    </select>
+                </label>
+                <label>QUANTITY<br>
+                    <input type="number" name="productQuantity" id="productQuantity" class="inputSingle"
+                        placeholder="2">
+                </label>
+                <button class="buttonSingle">
+                    <img src="img/cartPink.png" alt="cart">
+                    Add to Cart
+                </button>
             </form>
         </div>
-        <div class="couponCart">
-            <h2 class="totalCartTitle">coupon discount</h2>
-            <div>Enter your coupon code if you have one</div>
-            <form action="#" class="cartForm">
-                <input type="text" placeholder="Code" id="couponCode">
-                <button>Apply coupon</button>
-            </form>
-        </div>
-        <div class="totalCart">
-            <div>Sub total &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $900</div>
-            <h2 class="totalCartTitle">GRAND TOTAL <span class="ss">$900</span> </h2>
-            <hr>
-            <button>proceed to checkout</button>
+    </div>
+    <div class="container likeSingle">
+        <h2 class="likeTitleSingle">you may like also</h2>
+        <div class="likeProductsSingle">
+            <div class="featuredItem">
+                <div class="featuredShow">
+                    <div class="featuredAdd">
+                        <a href="#" class="addToCart">
+                            <img src="img/addToCart.png" alt="addToCart">
+                            Add to Cart
+                        </a>
+                    </div>
+                    <img class="featuredImg" src="img/like1.png" alt="featuredItem">
+                </div>
+                <div class="featuredInfo">
+                    <div class="featuredName">
+                        BLAZE LEGGINGS
+                    </div>
+                    <div class="featuredPrice">
+                        $52.00
+                    </div>
+                </div>
+            </div>
+            <div class="featuredItem">
+                <div class="featuredShow">
+                    <div class="featuredAdd">
+                        <a href="#" class="addToCart">
+                            <img src="img/addToCart.png" alt="addToCart">
+                            Add to Cart
+                        </a>
+                    </div>
+                    <img class="featuredImg" src="img/like2.png" alt="featuredItem">
+                </div>
+                <div class="featuredInfo">
+                    <div class="featuredName">
+                        ALEXA SWEATER
+                    </div>
+                    <div class="featuredPrice">
+                        $52.00
+                    </div>
+                </div>
+            </div>
+            <div class="featuredItem">
+                <div class="featuredShow">
+                    <div class="featuredAdd">
+                        <a href="#" class="addToCart">
+                            <img src="img/addToCart.png" alt="addToCart">
+                            Add to Cart
+                        </a>
+                    </div>
+                    <img class="featuredImg" src="img/like3.png" alt="featuredItem">
+                </div>
+                <div class="featuredInfo">
+                    <div class="featuredName">
+                        AGNES TOP
+                    </div>
+                    <div class="featuredPrice">
+                        $52.00
+                    </div>
+                </div>
+            </div>
+            <div class="featuredItem">
+                <div class="featuredShow">
+                    <div class="featuredAdd">
+                        <a href="#" class="addToCart">
+                            <img src="img/addToCart.png" alt="addToCart">
+                            Add to Cart
+                        </a>
+                    </div>
+                    <img class="featuredImg" src="img/like4.png" alt="featuredItem">
+                </div>
+                <div class="featuredInfo">
+                    <div class="featuredName">
+                        SYLVA SWEATER
+                    </div>
+                    <div class="featuredPrice">
+                        $52.00
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="subscribe">
@@ -233,6 +265,8 @@
             </div>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/singlePage.js"></script>
 </body>
 
 </html>
