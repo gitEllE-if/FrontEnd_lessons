@@ -1,17 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
-.productInfoSingle .productInfoSingleWrap .productCategorySingle, .productInfoSingle .productInfoSingleWrap .productNameSingle, .productInfoSingle .productInfoSingleWrap .productMaterialDesignerSingle div, .productInfoSingle .productInfoSingleWrap .productPriceSingle, .productInfoSingle .productInfoSingleWrap .formSingle label, .likeSingle .likeTitleSingle, .leftNav .leftNavItem .leftNavHead button, .propertiesProduct .propertyProduct .propertyTitle {
-  line-height: 24px;
-  text-transform: uppercase;
-}
-
-.productInfoSingle .productInfoSingleWrap .productTextSingle, .productInfoSingle .productInfoSingleWrap .formSingle label .inputSingle, .leftNav .leftNavItem .leftNavBody .leftNavList {
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 300;
-}
-
 .productInfoSingle .productInfoSingleWrap .productCategorySingle, .productInfoSingle .productInfoSingleWrap .productNameSingle, .productInfoSingle .productInfoSingleWrap .productMaterialDesignerSingle div, .productInfoSingle .productInfoSingleWrap .productPriceSingle, .productInfoSingle .productInfoSingleWrap .formSingle label, .likeSingle .likeTitleSingle, .leftNav .leftNavItem .leftNavHead button, .propertiesProduct .propertyProduct .propertyTitle {
   line-height: 24px;
   text-transform: uppercase;
@@ -224,7 +212,6 @@
   width: 100%;
   background-color: #ffffff;
   outline: none;
-  border: none;
   cursor: pointer;
   border: 1px solid #f16d7f;
   display: -webkit-box;
