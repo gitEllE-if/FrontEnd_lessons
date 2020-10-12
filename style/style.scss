@@ -1,5 +1,6 @@
 @import "_variables.scss";
 @import "singlePageStyle.scss";
+@import "productStyle.scss";
 
 * {
     margin: 0;
@@ -8,7 +9,7 @@
     font-family: $mainFont;
 }
 
-.container {
+.containerWrap {
     margin: 0 auto;
     max-width: 1140px;
 }
@@ -18,7 +19,7 @@
     border-bottom: 1px solid #ececec;
 }
 
-.headerMain .container {
+.headerMain .containerWrap {
     height: inherit;
     display: flex;
     align-items: center;
@@ -31,14 +32,14 @@
     height: 51px;
     display: flex;
     align-items: center;
-    text-decoration: none;
+    text-decoration: none !important;
     padding-left: 72px;
     font-size: 27px;
     line-height: 32px;
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 0.025em;
-    color: #222222;
+    color: #222222 !important;
 }
 
 .logo span {
@@ -151,7 +152,7 @@
     background-color: #e8e8e8;
 }
 
-.topShow .container {
+.topShow .containerWrap {
     height: inherit;
     background: url(../img/topShow.png) no-repeat right 50px top 5px;
     background-size: 550px;
@@ -301,10 +302,10 @@
     padding: 15px;
     border: 1px solid #ffffff;
     background: none;
-    color: white;
+    color: white !important;
     font-size: 13px;
     font-weight: 700;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .featuredAdd .addToCart img {
@@ -462,7 +463,7 @@
     background-blend-mode: overlay;
 }
 
-.subscribe .container {
+.subscribe .containerWrap {
     display: flex;
     height: inherit;
 }
@@ -635,7 +636,7 @@
     background-color: #e6e6e6;
 }
 
-.footerBottom .container {
+.footerBottom .containerWrap {
     height: inherit;
     display: flex;
     justify-content: space-between;
@@ -649,7 +650,7 @@
 }
 
 .footerSocialIcon {
-    text-decoration: none;
+    text-decoration: none !important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -660,7 +661,7 @@
     line-height: 42px;
     font-weight: 400;
     letter-spacing: 0.025em;
-    color: #b2b2b2;
+    color: #b2b2b2 !important;
 }
 
 .footerSocialIcon :hover {
@@ -688,7 +689,7 @@
     background-color: #f8f3f4;
 }
 
-.topShowCart .container {
+.topShowCart .containerWrap {
     height: inherit;
     display: flex;
     justify-content: space-between;
