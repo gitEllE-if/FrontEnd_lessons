@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
+.productInfoSingle .productInfoSingleWrap .productCategorySingle, .productInfoSingle .productInfoSingleWrap .productNameSingle, .productInfoSingle .productInfoSingleWrap .productMaterialDesignerSingle div, .productInfoSingle .productInfoSingleWrap .productPriceSingle, .productInfoSingle .productInfoSingleWrap .formSingle label, .likeSingle .likeTitleSingle {
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.productInfoSingle .productInfoSingleWrap .productTextSingle, .productInfoSingle .productInfoSingleWrap .formSingle label .inputSingle {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+.sliderSingle {
+  height: 777px;
+  background: url(../img/slider1.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.sliderSingle .sliderArrows {
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sliderSingle .sliderArrows .sliderArrow {
+  height: 47px;
+  width: 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(42, 42, 42, 0.14);
+}
+
+.sliderSingle .sliderArrows .sliderArrow i {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.sliderSingle .sliderArrows .sliderArrow:hover {
+  background-color: #f16d7f;
+}
+
+.productInfoSingle {
+  padding: 73px 261px 122px;
+  background-color: white;
+  border: 1px solid #eaeaea;
+  position: relative;
+  top: -86px;
+}
+
+.productInfoSingle .productInfoSingleWrap {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.productInfoSingle .productInfoSingleWrap .productCategorySingle {
+  font-weight: 700;
+  font-size: #f16d7f;
+  color: #2f2f2f;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eaeaea;
+  position: relative;
+}
+
+.productInfoSingle .productInfoSingleWrap .productCategorySingle::after {
+  content: '';
+  width: 62px;
+  height: 3px;
+  background-color: #f16d7f;
+  display: block;
+  position: absolute;
+  top: 38px;
+  left: calc(50% - 62px/2);
+}
+
+.productInfoSingle .productInfoSingleWrap .productNameSingle {
+  font-weight: 900;
+  font-size: 18px;
+  color: #2f2f2f;
+  margin-top: 18px;
+  margin-bottom: 67px;
+}
+
+.productInfoSingle .productInfoSingleWrap .productTextSingle {
+  text-align: center;
+  color: #5e5e5e;
+}
+
+.productInfoSingle .productInfoSingleWrap .productMaterialDesignerSingle {
+  margin-top: 28px;
+  width: 332px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.productInfoSingle .productInfoSingleWrap .productMaterialDesignerSingle div {
+  font-weight: 700;
+  font-size: 14px;
+  color: #2f2f2f;
+}
+
+.productInfoSingle .productInfoSingleWrap .productMaterialDesignerSingle div span {
+  color: #b9b9b9;
+}
+
+.productInfoSingle .productInfoSingleWrap .productPriceSingle {
+  font-weight: 700;
+  font-size: 24px;
+  color: #f16d7f;
+  width: 100%;
+  margin-top: 37px;
+  padding-bottom: 43px;
+  text-align: center;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.productInfoSingle .productInfoSingleWrap .formSingle {
+  margin-top: 63px;
+  padding: 0 40px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #ffffff;
+}
+
+.productInfoSingle .productInfoSingleWrap .formSingle label {
+  font-weight: 700;
+  font-size: 14px;
+  color: #2f2f2f;
+  position: relative;
+}
+
+.productInfoSingle .productInfoSingleWrap .formSingle label .inputSingle {
+  width: 144px;
+  height: 35px;
+  margin-top: 15px;
+  margin-bottom: 28px;
+  padding: 12px;
+  border: 1px solid #eaeaea;
+  outline: none;
+}
+
+.productInfoSingle .productInfoSingleWrap .formSingle label .selectSingle {
+  font-size: 13px;
+  font-weight: 400;
+  width: 144px;
+  height: 35px;
+  margin-top: 15px;
+  margin-bottom: 28px;
+  padding-left: 12px;
+  border: 1px solid #eaeaea;
+  outline: none;
+  color: #bcbcbc;
+}
+
+.productInfoSingle .productInfoSingleWrap .formSingle label .colorBlock {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: #f16d7f;
+  position: absolute;
+  top: 51px;
+  left: 12px;
+}
+
+.productInfoSingle .productInfoSingleWrap .formSingle label .colorBlock + select {
+  padding-left: 36px;
+}
+
+.productInfoSingle .productInfoSingleWrap .formSingle .buttonSingle {
+  font-size: 16px;
+  font-weight: 700;
+  color: #f16d7f;
+  height: 55px;
+  width: 100%;
+  background-color: #ffffff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border: 1px solid #f16d7f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.productInfoSingle .productInfoSingleWrap .formSingle .buttonSingle img {
+  margin-right: 15px;
+}
+
+.likeSingle {
+  padding-top: 34px;
+}
+
+.likeSingle .likeTitleSingle {
+  font-weight: 900;
+  font-size: 24px;
+  color: #2f2f2f;
+  margin-bottom: 72px;
+  text-align: center;
+}
+
+.likeSingle .likeProductsSingle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+/*# sourceMappingURL=singlePageStyle.css.map */

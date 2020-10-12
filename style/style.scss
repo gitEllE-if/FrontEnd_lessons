@@ -1,11 +1,11 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import "_variables.scss";
+@import "singlePageStyle.scss";
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Lato, sans-serif;
+    font-family: $mainFont;
 }
 
 .container {
@@ -25,7 +25,7 @@
 }
 
 .logo {
-    background: url(img/logo.png);
+    background: url(../img/logo.png);
     background-repeat: no-repeat;
     width: 167px;
     height: 51px;
@@ -43,7 +43,7 @@
 
 .logo span {
     font-weight: 900;
-    color: #f16d7f;
+    color: $mainColor;
 }
 
 .search {
@@ -107,7 +107,7 @@
 .accountButton {
     width: 130px;
     height: 38px;
-    background-color: #f16d7f;
+    background-color: $mainColor;
     font-size: 15px;
     line-height: 32px;
     font-weight: 400;
@@ -143,7 +143,7 @@
 }
 
 .topNav a:hover {
-    color: #f16d7f;
+    color: $mainColor;
 }
 
 .topShow {
@@ -153,7 +153,7 @@
 
 .topShow .container {
     height: inherit;
-    background: url(img/topShow.png) no-repeat right 50px top 5px;
+    background: url(../img/topShow.png) no-repeat right 50px top 5px;
     background-size: 550px;
     display: flex;
     align-items: center;
@@ -161,7 +161,7 @@
 
 .topShowText {
     height: 92px;
-    border-left: 12px solid #f16d7f;
+    border-left: 12px solid $mainColor;
     padding-left: 12px;
     line-height: 0.7;
     font-weight: 900;
@@ -179,7 +179,7 @@
 }
 
 .showTextBottom span {
-    color: #f16d7f;
+    color: $mainColor;
 }
 
 .offers {
@@ -231,7 +231,7 @@
 
 .labelTextBottom {
     font-size: 30px;
-    color: #f16d7f;
+    color: $mainColor;
     margin: 0 18px 16px 18px;
 }
 
@@ -328,7 +328,7 @@
     margin-top: 15px;
     font-size: 16px;
     font-weight: 700;
-    color: #f16d7f;
+    color: $mainColor;
 }
 
 .featuredItem:nth-child(n+5) {
@@ -338,7 +338,7 @@
 .featuredButton {
     width: 212px;
     height: 48px;
-    background-color: #f16d7f;
+    background-color: $mainColor;
     font-size: 16px;
     line-height: 32px;
     font-weight: 700;
@@ -365,7 +365,7 @@
 }
 
 .offerBottomShow {
-    background: url(img/offerBottom.jpg) no-repeat;
+    background: url(../img/offerBottom.jpg) no-repeat;
     background-size: cover;
     height: 529px;
     flex-grow: 1;
@@ -384,7 +384,7 @@
 } 
 
 .bottomShowLabelTop span {
-    color: #f16d7f;
+    color: $mainColor;
 }
 
 .bottomShowLabelBottom {
@@ -437,19 +437,19 @@
 }
 
 .menu__li:first-child::before {
-    content: url(img/offerBottom1.png);
+    content: url(../img/offerBottom1.png);
     margin-right: 30px;
     display: block;
 }
 
 .menu__li:last-child::before {
-    content: url(img/offerBottom2.png);
+    content: url(../img/offerBottom2.png);
     margin-right: 30px;
     display: block;
 }
 
 .menu__li:nth-child(2)::before {
-    content: url(img/offerBottom3.png);
+    content: url(../img/offerBottom3.png);
     margin-right: 30px;
     display: block;
 }
@@ -457,7 +457,7 @@
 .subscribe {
     height: 438px;
     margin-top: 100px;
-    background: url(img/subscribe.jpg) no-repeat center bottom rgb(190, 190, 190);
+    background: url(../img/subscribe.jpg) no-repeat center bottom rgb(190, 190, 190);
     background-size: cover;
     background-blend-mode: overlay;
 }
@@ -499,7 +499,7 @@
     line-height: 26px;
     font-weight: 700;
     letter-spacing: 0.025em;
-    color: #f16d7f;
+    color: $mainColor;
 }
 
 .feedbackCountry {
@@ -523,7 +523,7 @@
 }
 
 .feedbackRect:hover {
-    background-color: #f16d7f;
+    background-color: $mainColor;
 }
 
 .subscribeMail {
@@ -556,7 +556,6 @@
     justify-content: center;
     align-items: center;
     font-size: 14px;
-    
     font-weight: 400;
     letter-spacing: 0.025em;
 }
@@ -576,7 +575,7 @@
 .subscribeForm button {
     height: inherit;
     width: 104px;
-    background-color: #f16d7f;
+    background-color: $mainColor;
     border: none;
     border-radius: 0px 30px 30px 0px;
     font: inherit;
@@ -610,7 +609,7 @@
     line-height: 26px;
     font-weight: 700;
     letter-spacing: 0.025em;
-    color: #f16d7f;
+    color: $mainColor;
     margin-bottom: 45px;
 }
 
@@ -671,7 +670,7 @@
     height: inherit;
     width: inherit;
     color: #ffffff;
-    background-color: #f16d7f;
+    background-color: $mainColor;
 }
 
 .footerCopyright {
@@ -701,7 +700,7 @@
     line-height: 20px;
     font-weight: 900;
     text-transform: uppercase;
-    color: #f16d7f;
+    color: $mainColor;
 }
 
 .showCartTextRight {
@@ -714,7 +713,7 @@
 
 .showCartTextRight span {
     font-weight: 700;
-    color: #f16d7f;
+    color: $mainColor;
 }
 
 .detailsCart {
@@ -866,7 +865,7 @@
 
 .totalCartTitle span {
     margin-left: 20px;
-    color: #f16d7f;
+    color: $mainColor;
 }
 
 .cartForm {
@@ -937,7 +936,7 @@ hr {
     margin-top: 17px;
     width: 273px;
     height: 50px;
-    background-color: #f16d7f;
+    background-color: $mainColor;
     font-size: 16px;
     line-height: 1.2;
     font-weight: 700;
