@@ -25,14 +25,23 @@
             <button class="accountButton">My Account<i class="fa fa-caret-down" aria-hidden="true"></i></button>
         </div>
     </header>
-    <nav class="topNav">
-        <a href="index.html"> Home</a>
-        <a href="#"> Man</a>
-        <a href="#"> Women</a>
-        <a href="#"> Kids</a>
-        <a href="#"> Accoseriese</a>
-        <a href="#"> Featured</a>
-        <a href="#"> Hot Deals</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse topNav" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a href="product.html">Man</a>
+                <a href="#">Women</a>
+                <a href="#">Kids</a>
+                <a href="#">Accoseriese</a>
+                <a href="#">Featured</a>
+                <a href="#">Hot Deals</a>
+            </div>
+        </div>
     </nav>
     <div class="topShowCart topShowProduct">
         <div class="containerWrap">
@@ -464,7 +473,7 @@
                     solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits.
                     Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.<br><br>Efficiently
                     plagiarize 24/365 action items and focused infomediaries.<br>Distinctively seize superior
-                    initiatives for wireless technologies.<br>Dynamically optimize.
+                    initiatives for wireless technologies. Dynamically optimize.
                 </div>
             </div>
             <section class="footerCompany">
@@ -500,7 +509,7 @@
         </div>
         <div class="footerBottom">
             <div class="containerWrap">
-                <div class="footerCopyright">&copy; 2017 Brand All Rights Reserved.</div>
+                <div class="footerCopyright">&copy;<span id="year">2000</span> Brand All Rights Reserved.</div>
                 <nav class="footerSocial">
                     <a href="#" class="footerSocialIcon"><i class="fab fa-facebook-f"></i></a>
                     <a href="#" class="footerSocialIcon"><i class="fab fa-twitter" aria-hidden="true"></i></a>
@@ -522,6 +531,7 @@
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/product.js"></script>
+    <script src="js/year.js"></script>
 </body>
 
 </html>
