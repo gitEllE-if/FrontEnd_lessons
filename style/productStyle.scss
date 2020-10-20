@@ -1,11 +1,17 @@
 @import "_variables.scss";
-@import "../framework/bootstrap-4.5.2/scss/bootstrap.scss";
+
+label {
+    margin-bottom: 0;
+}
 
 .topShowProduct {
     margin-bottom: 60px;
 }
 
 .leftNav {
+    @media(max-width: 767px){
+        margin-bottom: 30px;
+    }
     .leftNavItem {
         &:not(:first-child) {
             margin-top: 18px;
@@ -54,9 +60,12 @@
 }
 
 .propertiesProduct {
-    height: 115px;
+    min-height: 115px;
     .propertyProduct {
-        width: 262px;
+        @media(max-width: 868px){
+            min-width: 100%;
+            margin-bottom: 30px;
+        }
         .propertyTitle {
             @include textUpper(14px, 700, #6f6e6e);
             margin-bottom: 15px;
@@ -148,7 +157,8 @@
 }
 
 .sortFormProduct {
-    height: 50px;
+    min-height: 50px;
+    padding-right: 10px;
     background-color: #f3f3f3;
     font-size: 14px;
     line-height: 26px;
@@ -157,13 +167,19 @@
     display: flex;
     align-items: center;
     margin-bottom: 28px;
+    flex-wrap: wrap;
+    @media(max-width: 389px){
+        padding-top: 10px;
+    }
     .sortGroupProduct {
-        width: 153px;
         height: 30px;
         margin-left: 10px;
         background-color: white;
         border: 1px solid #ebebeb;
         display: flex;
+        @media(max-width: 389px){
+            margin-bottom: 10px;
+        }
         label {
             width: 68px;
             padding-left: 15px;
@@ -173,11 +189,8 @@
             outline: none;
         }
         select {
-            width: 100%;
-            padding-left: 15px;
-            font-size: 14px;
-            line-height: 26px;
-            font-weight: 400;
+            width: 80px;
+            padding: 0 10px 3px 10px;
             color: #6f6e6e;
             border: none;
             outline: none;
@@ -186,44 +199,37 @@
 }
 
 .itemsProduct {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    .col-4 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .col-md-4 {
         padding-top: 30px;
-        .featuredItem {
-            flex-basis: 256px;
-            flex-shrink: 0;
+        @media (max-width: 890px){
+            min-width: 50%;
+        }
+        @media (max-width: 867px){
+            width: 50%;
+        }
+        @media (max-width: 480px){
+            min-width: 100%;
+        }
+        .itemProduct {
+            &:hover {
+                box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+                & .featuredAdd {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
         }
     }
 }
 
-.qualityProduct {
-    background: #222224;
-    padding-top: 90px;
-    padding-bottom: 110px;
-    color: white;
-        .col-4 {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        .qualityTitle {
-            margin-top: 32px;
-            margin-bottom: 20px;
-            font-size: 20px;
-            font-weight: 700;
-        }
-        .qualityText {
-            font-weight: 300;
-            text-align: center;
-        }
-    &+ .subscribe {
-        margin-top: 0;
+.itemShow {
+    position: relative;
+     .featuredAdd {
+         height: 100%;
+     }
+    .itemImg {
+        width: 100%;
     }
 }
 
@@ -232,7 +238,6 @@
     margin-bottom: 110px;
     padding: 0 15px;
     color: #c4c4c4;
-    display: flex;
     justify-content: space-between;
     .pagesProduct {
         height: 45px;
@@ -251,6 +256,16 @@
                 color: $mainColor;
             }
         }
+        @media (max-width: 890px){
+            min-width: 50%;
+        }
+        @media (max-width: 867px){
+            width: 50%;
+        }
+        @media (max-width: 480px){
+            min-width: 100%;
+            margin-bottom: 30px;
+        }
     }
     button {
         color: $mainColor;
@@ -261,5 +276,47 @@
         background: none;
         cursor: pointer;
         outline: none;
+        @media (max-width: 890px){
+            min-width: 30%;
+        }
+        @media (max-width: 867px){
+            width: 30%;
+        }
+        @media (max-width: 480px){
+            min-width: 100%;
+        }
+    }
+}
+
+.qualityProduct {
+    background: #222224;
+    padding-top: 90px;
+    padding-bottom: 110px;
+    color: white;
+    .row {
+        .col-md-4 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            &:not(:first-child) {
+                @media (max-width: 767px){
+                    margin-top: 35px;
+                }
+            }
+        }
+        .qualityTitle {
+            margin-top: 32px;
+            margin-bottom: 20px;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .qualityText {
+            font-weight: 300;
+            text-align: center;
+        }
+    }
+    &+ .subscribe {
+        margin-top: 0;
     }
 }
