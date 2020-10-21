@@ -11627,6 +11627,12 @@ label {
   padding: 15px 0 15px 30px;
 }
 
+@media (max-width: 440px) {
+  .leftNavCheckout .leftNavItem .leftNavBody {
+    padding: 0;
+  }
+}
+
 .leftNavCheckout .leftNavItem .leftNavBody .leftNavList li {
   list-style: none;
 }
@@ -11775,7 +11781,7 @@ label {
   color: #222222;
 }
 
-@media (max-width: 401px) {
+@media (max-width: 371px) {
   .formCheckout .registerButton div {
     margin-top: 15px;
   }
@@ -13123,19 +13129,24 @@ label {
   color: #4a4a4a;
 }
 
-.totalCart button {
-  margin-top: 17px;
-  width: 273px;
-  height: 50px;
+.totalCart a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 42px;
   background-color: #f16d7f;
   font-size: 16px;
   line-height: 1.2;
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
-  border: none;
-  outline: none;
-  cursor: pointer;
+  text-decoration: none;
 }
 
 hr {

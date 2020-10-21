@@ -969,8 +969,6 @@
     color: #b1b1b1;
 }
 
-
-
 .couponCart div {
     margin-bottom: 20px;
     font-size: 14px;
@@ -993,19 +991,18 @@
         text-transform: uppercase;
         color: #4a4a4a;
     }
-    button {
-        margin-top: 17px;
-        width: 273px;
-        height: 50px;
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 42px;
         background-color: $mainColor;
         font-size: 16px;
         line-height: 1.2;
         font-weight: 700;
         text-transform: uppercase;
         color: #ffffff;
-        border: none;
-        outline: none;
-        cursor: pointer;
+        text-decoration: none;
     }
 }
 
