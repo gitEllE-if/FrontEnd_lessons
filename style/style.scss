@@ -284,7 +284,6 @@
 
 .featuredItem {
     width: 263px;
-    height: 364px;
     &:hover {
         box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
         & .featuredAdd {
@@ -299,7 +298,6 @@
 }
 
 .featuredShow {
-    height: 280px;
     position: relative;
     .featuredImg {
         width: 100%;
@@ -312,7 +310,7 @@
     position: absolute;
     display: none;
     width: 100%;
-    height: inherit;
+    height: 100%;
     background: rgba(0, 0, 0, 0.7);
     .addToCart {
         display: flex;

@@ -4,6 +4,9 @@
     height: 777px;
     background: url(../img/slider1.jpg) no-repeat center center;
     background-size: cover;
+    @media(max-width: 440px) {
+        height: 600px;
+    }
     .sliderArrows {
         height: inherit;
         display: flex;
@@ -30,16 +33,28 @@
 }
 
 .productInfoSingle {
-    padding: 73px 261px 122px !important; 
+    padding-top: 73px !important;
+    padding-bottom: 122px !important;
     background-color: white;
     border: 1px solid #eaeaea;
     position: relative;
     top: -86px;
+    @media(max-width: 440px) {
+        top: -40px;
+        padding-bottom: 73px !important;
+    }
     .productInfoSingleWrap {
+        width: 58%;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
+        @media(max-width: 930px) {
+            width: 80%;
+        }
+        @media(max-width: 680px) {
+            width: 100%;
+        }
         .productCategorySingle {
             @include textUpper($mainColor);
             padding-bottom: 15px;
@@ -72,6 +87,11 @@
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
+            @media(max-width: 450px) {
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+            }
             div {
                 @include textUpper();
                 span {
@@ -95,9 +115,15 @@
             flex-wrap: wrap;
             justify-content: space-between;
             background-color: #ffffff;
+            @media(max-width: 550px) {
+                flex-direction: column;
+            }
             label {
                 @include textUpper();
                 position: relative;
+                @media(max-width: 550px) {
+                    width: 100%;
+                }
                 .inputSingle {
                     @extend %textMain;
                     width: 144px;
@@ -107,6 +133,9 @@
                     padding: 12px;
                     border: 1px solid #eaeaea;
                     outline: none;
+                    @media(max-width: 550px) {
+                        width: 100%;
+                    }
                 }
                 .selectSingle {
                     font-size: 13px;
@@ -119,6 +148,9 @@
                     border: 1px solid #eaeaea;
                     outline: none;
                     color: #bcbcbc;
+                    @media(max-width: 550px) {
+                        width: 100%;
+                    }
                 }
                 .colorBlock {
                     display: block;
@@ -165,5 +197,19 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        .featuredItem {
+            margin-bottom: 20px;
+            @media (max-width: 1082px) {
+                min-width: calc(50% - 10px);
+            }
+            @media (max-width: 556px) {
+                min-width: 100%;
+            }
+        }
+    }
+    &+ .subscribe{
+        @media(max-width: 550px) {
+            margin-top: 30px;
+        }
     }
 }
