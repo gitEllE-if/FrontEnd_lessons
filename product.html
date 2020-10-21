@@ -25,14 +25,23 @@
             <button class="accountButton">My Account<i class="fa fa-caret-down" aria-hidden="true"></i></button>
         </div>
     </header>
-    <nav class="topNav">
-        <a href="index.html"> Home</a>
-        <a href="#"> Man</a>
-        <a href="#"> Women</a>
-        <a href="#"> Kids</a>
-        <a href="#"> Accoseriese</a>
-        <a href="#"> Featured</a>
-        <a href="#"> Hot Deals</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse topNav" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a href="product.html">Man</a>
+                <a href="#">Women</a>
+                <a href="#">Kids</a>
+                <a href="#">Accoseriese</a>
+                <a href="#">Featured</a>
+                <a href="#">Hot Deals</a>
+            </div>
+        </div>
     </nav>
     <div class="topShowCart topShowProduct">
         <div class="containerWrap">
@@ -45,7 +54,7 @@
         </div>
     </div>
     <div class="wrapperProduct containerWrap row">
-        <nav class="leftNav col-3" id="leftNavProduct">
+        <nav class="leftNav col-md-3" id="leftNavProduct">
             <div class="leftNavItem">
                 <div class="leftNavHead" id="headingOne">
                     <button type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
@@ -109,9 +118,9 @@
                 </div>
             </div>
         </nav>
-        <div class="contentProduct col-9">
+        <div class="contentProduct col-md-9">
             <div class="propertiesProduct row">
-                <div class="propertyProduct col-4">
+                <div class="propertyProduct col-md-4">
                     <h2 class="propertyTitle">
                         Trending&nbsp;now
                     </h2>
@@ -123,7 +132,7 @@
                         <span>|</span>Bohemian
                     </div>
                 </div>
-                <div class="propertyProduct col-4">
+                <div class="propertyProduct col-md-4">
                     <h2 class="propertyTitle">
                         Size
                     </h2>
@@ -144,7 +153,7 @@
                         <label for="xxlSize">XXL</label>
                     </div>
                 </div>
-                <div class="propertyProduct col-4">
+                <div class="propertyProduct col-md-4">
                     <h2 class="propertyTitle">
                         Price
                     </h2>
@@ -164,9 +173,7 @@
             </div>
             <form action="#" class="sortFormProduct">
                 <div class="sortGroupProduct">
-                    <div>
-                        <label for="inputGroupSelect01">SortBy</label>
-                    </div>
+                    <label for="inputGroupSelect01">SortBy</label>
                     <select id="inputGroupSelect01">
                         <option value="name">Name</option>
                         <option value="price">Price</option>
@@ -174,9 +181,7 @@
                     </select>
                 </div>
                 <div class="sortGroupProduct">
-                    <div>
-                        <label for="inputGroupSelect02">Show</label>
-                    </div>
+                    <label for="inputGroupSelect02">Show</label>
                     <select id="inputGroupSelect02">
                         <option value="9">09</option>
                         <option value="12">12</option>
@@ -185,16 +190,16 @@
                 </div>
             </form>
             <div class="itemsProduct row">
-                <div class="col-4">
-                    <div class="featuredItem">
-                        <div class="featuredShow">
+                <div class="col-md-4">
+                    <div class="itemProduct">
+                        <div class="itemShow">
                             <div class="featuredAdd">
                                 <a href="single-page.html" class="addToCart">
                                     <img src="img/addToCart.png" alt="addToCart">
                                     Add to Cart
                                 </a>
                             </div>
-                            <img class="featuredImg" src="img/productMan1.jpg" alt="featuredItem">
+                            <img class="itemImg" src="img/productMan1.jpg" alt="featuredItem">
                         </div>
                         <div class="featuredInfo">
                             <div class="featuredName">
@@ -206,16 +211,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="featuredItem">
-                        <div class="featuredShow">
+                <div class="col-md-4">
+                    <div class="itemProduct">
+                        <div class="itemShow">
                             <div class="featuredAdd">
                                 <a href="single-page.html" class="addToCart">
                                     <img src="img/addToCart.png" alt="addToCart">
                                     Add to Cart
                                 </a>
                             </div>
-                            <img class="featuredImg" src="img/productMan2.jpg" alt="featuredItem">
+                            <img class="itemImg" src="img/productMan2.jpg" alt="featuredItem">
                         </div>
                         <div class="featuredInfo">
                             <div class="featuredName">
@@ -227,16 +232,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="featuredItem">
-                        <div class="featuredShow">
+                <div class="col-md-4">
+                    <div class="itemProduct">
+                        <div class="itemShow">
                             <div class="featuredAdd">
                                 <a href="single-page.html" class="addToCart">
                                     <img src="img/addToCart.png" alt="addToCart">
                                     Add to Cart
                                 </a>
                             </div>
-                            <img class="featuredImg" src="img/productMan3.jpg" alt="featuredItem">
+                            <img class="itemImg" src="img/productMan3.jpg" alt="featuredItem">
                         </div>
                         <div class="featuredInfo">
                             <div class="featuredName">
@@ -248,16 +253,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="featuredItem">
-                        <div class="featuredShow">
+                <div class="col-md-4">
+                    <div class="itemProduct">
+                        <div class="itemShow">
                             <div class="featuredAdd">
                                 <a href="single-page.html" class="addToCart">
                                     <img src="img/addToCart.png" alt="addToCart">
                                     Add to Cart
                                 </a>
                             </div>
-                            <img class="featuredImg" src="img/productMan4.jpg" alt="featuredItem">
+                            <img class="itemImg" src="img/productMan4.jpg" alt="featuredItem">
                         </div>
                         <div class="featuredInfo">
                             <div class="featuredName">
@@ -269,16 +274,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="featuredItem">
-                        <div class="featuredShow">
+                <div class="col-md-4">
+                    <div class="itemProduct">
+                        <div class="itemShow">
                             <div class="featuredAdd">
                                 <a href="single-page.html" class="addToCart">
                                     <img src="img/addToCart.png" alt="addToCart">
                                     Add to Cart
                                 </a>
                             </div>
-                            <img class="featuredImg" src="img/productMan5.jpg" alt="featuredItem">
+                            <img class="itemImg" src="img/productMan5.jpg" alt="featuredItem">
                         </div>
                         <div class="featuredInfo">
                             <div class="featuredName">
@@ -290,16 +295,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="featuredItem">
-                        <div class="featuredShow">
+                <div class="col-md-4">
+                    <div class="itemProduct">
+                        <div class="itemShow">
                             <div class="featuredAdd">
                                 <a href="single-page.html" class="addToCart">
                                     <img src="img/addToCart.png" alt="addToCart">
                                     Add to Cart
                                 </a>
                             </div>
-                            <img class="featuredImg" src="img/productMan6.jpg" alt="featuredItem">
+                            <img class="itemImg" src="img/productMan6.jpg" alt="featuredItem">
                         </div>
                         <div class="featuredInfo">
                             <div class="featuredName">
@@ -311,16 +316,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="featuredItem">
-                        <div class="featuredShow">
+                <div class="col-md-4">
+                    <div class="itemProduct">
+                        <div class="itemShow">
                             <div class="featuredAdd">
                                 <a href="single-page.html" class="addToCart">
                                     <img src="img/addToCart.png" alt="addToCart">
                                     Add to Cart
                                 </a>
                             </div>
-                            <img class="featuredImg" src="img/productMan7.jpg" alt="featuredItem">
+                            <img class="itemImg" src="img/productMan7.jpg" alt="featuredItem">
                         </div>
                         <div class="featuredInfo">
                             <div class="featuredName">
@@ -332,16 +337,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="featuredItem">
-                        <div class="featuredShow">
+                <div class="col-md-4">
+                    <div class="itemProduct">
+                        <div class="itemShow">
                             <div class="featuredAdd">
                                 <a href="single-page.html" class="addToCart">
                                     <img src="img/addToCart.png" alt="addToCart">
                                     Add to Cart
                                 </a>
                             </div>
-                            <img class="featuredImg" src="img/productMan8.jpg" alt="featuredItem">
+                            <img class="itemImg" src="img/productMan8.jpg" alt="featuredItem">
                         </div>
                         <div class="featuredInfo">
                             <div class="featuredName">
@@ -353,16 +358,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="featuredItem">
-                        <div class="featuredShow">
+                <div class="col-md-4">
+                    <div class="itemProduct">
+                        <div class="itemShow">
                             <div class="featuredAdd">
                                 <a href="single-page.html" class="addToCart">
                                     <img src="img/addToCart.png" alt="addToCart">
                                     Add to Cart
                                 </a>
                             </div>
-                            <img class="featuredImg" src="img/productMan9.jpg" alt="featuredItem">
+                            <img class="itemImg" src="img/productMan9.jpg" alt="featuredItem">
                         </div>
                         <div class="featuredInfo">
                             <div class="featuredName">
@@ -376,7 +381,7 @@
                 </div>
             </div>
             <div class="paginationProduct row">
-                <div class="pagesProduct col-4">
+                <div class="pagesProduct col-md-4">
                     <a href="#"><i class="fas fa-chevron-left"></i></a>
                     <a href="#">1</a>
                     <a href="#">2</a>
@@ -390,15 +395,14 @@
                     </span>
                     <a href="#"><i class="fas fa-chevron-right"></i></a>
                 </div>
-                <button class="col-3">View All</button>
+                <button class="col-md-3">View All</button>
             </div>
         </div>
     </div>
-
     <div class="qualityProduct">
         <div class="containerWrap">
             <div class="row">
-                <section class="col-4">
+                <section class="col-md-4">
                     <img src="img/offerBottom1.png" alt="quality">
                     <h3 class="qualityTitle">Free Delivery</h3>
                     <div class="qualityText">
@@ -407,7 +411,7 @@
                         tion with extensive models.
                     </div>
                 </section>
-                <section class="col-4">
+                <section class="col-md-4">
                     <img src="img/offerBottom2.png" alt="quality">
                     <h3 class="qualityTitle">Sales & discounts</h3>
                     <div class="qualityText">
@@ -416,7 +420,7 @@
                         tion with extensive models.
                     </div>
                 </section>
-                <section class="col-4">
+                <section class="col-md-4">
                     <img src="img/offerBottom3.png" alt="quality">
                     <h3 class="qualityTitle">Quality assurance</h3>
                     <div class="qualityText">
@@ -464,7 +468,7 @@
                     solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits.
                     Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.<br><br>Efficiently
                     plagiarize 24/365 action items and focused infomediaries.<br>Distinctively seize superior
-                    initiatives for wireless technologies.<br>Dynamically optimize.
+                    initiatives for wireless technologies. Dynamically optimize.
                 </div>
             </div>
             <section class="footerCompany">
@@ -500,7 +504,7 @@
         </div>
         <div class="footerBottom">
             <div class="containerWrap">
-                <div class="footerCopyright">&copy; 2017 Brand All Rights Reserved.</div>
+                <div class="footerCopyright">&copy;<span id="year">2000</span> Brand All Rights Reserved.</div>
                 <nav class="footerSocial">
                     <a href="#" class="footerSocialIcon"><i class="fab fa-facebook-f"></i></a>
                     <a href="#" class="footerSocialIcon"><i class="fab fa-twitter" aria-hidden="true"></i></a>
@@ -521,7 +525,8 @@
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/product.js"></script>
+    <script src="js/leftNavButton.js"></script>
+    <script src="js/year.js"></script>
 </body>
 
 </html>
