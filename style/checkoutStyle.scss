@@ -24,6 +24,9 @@
             margin-bottom: 15px;
             @extend %textMain;
             padding: 15px 0 15px 30px;
+            @media(max-width: 440px) {
+                padding: 0;
+            }
             .leftNavList { 
                 li {
                     list-style: none;
@@ -131,7 +134,7 @@
             line-height: 20px;
             font-weight: 400;
             color: #222222;
-            @media (max-width: 401px) {
+            @media (max-width: 371px) {
                 margin-top: 15px;
             }
         }

@@ -44,6 +44,12 @@
   padding: 15px 0 15px 30px;
 }
 
+@media (max-width: 440px) {
+  .leftNavCheckout .leftNavItem .leftNavBody {
+    padding: 0;
+  }
+}
+
 .leftNavCheckout .leftNavItem .leftNavBody .leftNavList li {
   list-style: none;
 }
@@ -192,7 +198,7 @@
   color: #222222;
 }
 
-@media (max-width: 401px) {
+@media (max-width: 371px) {
   .formCheckout .registerButton div {
     margin-top: 15px;
   }
